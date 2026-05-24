@@ -1,0 +1,29 @@
+/* ── Reset ── */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	min-width: 320px;
+	min-height: 100vh;
+	background: #0f1117;
+}
+
+#root {
+	max-width: 100%;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+}
+
+a {
+	color: #6c63ff;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #7e77ff;
+}
