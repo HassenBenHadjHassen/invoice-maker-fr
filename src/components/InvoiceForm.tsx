@@ -151,14 +151,7 @@ export default function InvoiceForm({ onGenerate }: InvoiceFormProps) {
 		setItems(updated);
 	};
 
-	// When unit price is hidden, user enters the line total.
-	// We store: unitPrice = lineTotal / max(1, quantity)
-	const updateItemLineTotal = (index: number, lineTotal: number) => {
-		const updated = [...items];
-		const qty = Math.max(1, updated[index].quantity);
-		updated[index] = { ...updated[index], unitPrice: lineTotal / qty };
-		setItems(updated);
-	};
+
 
 	const addItem = () =>
 		setItems([...items, { description: "", quantity: 1, unitPrice: 0 }]);
